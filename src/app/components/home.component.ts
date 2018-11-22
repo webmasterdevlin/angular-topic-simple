@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   sub: Subscription;
   total: any;
 
-  constructor(private _http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
     this.sub = this.getData().subscribe(data => {
@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   getData(): Observable<any> {
-    return this._http.get("http://localhost:5000/members");
+    return this.http.get("http://localhost:5000/members");
   }
 
   ngOnDestroy(): void {

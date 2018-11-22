@@ -25,7 +25,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
     private location: Location
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.id = this.activatedRoute.snapshot.paramMap.get("id");
     this.sub = this.getData(this.id).subscribe(data => (this.member = data));
   }

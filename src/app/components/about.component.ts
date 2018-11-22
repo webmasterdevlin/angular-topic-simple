@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "app-about",
@@ -10,14 +10,10 @@ import { Component, OnInit } from "@angular/core";
     <button (click)="onClick()">Increment</button>
   `
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
   counter: number = 0;
 
-  constructor() {}
-
-  ngOnInit() {}
-
-  onClick() {
+  onClick(): void {
     this.counter = this.counter + 1;
   }
 }
