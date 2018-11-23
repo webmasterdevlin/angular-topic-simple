@@ -11,7 +11,8 @@ import { Location } from "@angular/common";
     <p>A.K.A: {{ member.name }}</p>
     <p>Age: {{ member.age }}</p>
     <p>Bounty: {{ member.bounty }}</p>
-    <button class="btn btn-secondary" (click)="handleClick()">Back</button>
+
+    <button class="btn btn-primary" (click)="handleClick()">Back</button>
   `
 })
 export class ProfileComponent implements OnInit, OnDestroy {

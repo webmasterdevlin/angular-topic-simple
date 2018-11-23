@@ -12,7 +12,7 @@ import { Observable, Subscription } from "rxjs";
       </li>
     </ul>
     <p>
-      Total bounties: <strong>{{ total }}</strong>
+      Total bounties: <strong>{{ total | currency:'USD':true:'4.2-2'}}</strong>
     </p>
   `
 })

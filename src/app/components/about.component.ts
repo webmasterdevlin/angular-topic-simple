@@ -7,7 +7,7 @@ import { Component } from "@angular/core";
     <p>
       Counter: <strong>{{ counter }}</strong>
     </p>
-    <button (click)="onClick()">Increment</button>
+    <button class="btn btn-success" (click)="onClick()">Increment</button>
   `
 })
 export class AboutComponent {
